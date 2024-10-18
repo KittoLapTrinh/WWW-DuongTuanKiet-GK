@@ -5,5 +5,10 @@
 ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 
 ### Class diagram
-![image](https://github.com/user-attachments/assets/623067ce-d78b-4a25-8789-5359133d6459)
+![image](https://github.com/user-attachments/assets/71ba9bf9-a9d9-4e05-9552-e87f7f077ba6)
+
+### Database diagram
+![database-diagram](https://github.com/user-attachments/assets/f56276b1-2993-4a5b-86f2-3d67185ef077)
+
+
 
