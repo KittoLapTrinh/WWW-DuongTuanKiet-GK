@@ -10,5 +10,16 @@
 ### Database diagram
 ![database-diagram](https://github.com/user-attachments/assets/f56276b1-2993-4a5b-86f2-3d67185ef077)
 
+3. Thiết kế trang index gồm link đến các câu sau 4, 5, 6
+   ![image](https://github.com/user-attachments/assets/f013982c-12a5-4bbc-9828-d320efd219b2)
+4. ![image](https://github.com/user-attachments/assets/55d9f6b9-e3d0-451f-8a6b-db2514c962ea)
+   ![image](https://github.com/user-attachments/assets/71b90950-f2eb-42eb-95d2-f2248fc8a213)
+5. report1.jsp 
+   ![image](https://github.com/user-attachments/assets/2c3fa5b2-1fbd-41f7-ae4b-eff1c1149bb3)
+6. report2.jsp
+
+
+
+
 
 
