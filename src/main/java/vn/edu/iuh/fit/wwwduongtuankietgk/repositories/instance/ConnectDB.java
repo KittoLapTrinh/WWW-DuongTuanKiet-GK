@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.wwwduongtuankietgk.repositories;
+package vn.edu.iuh.fit.wwwduongtuankietgk.repositories.instance;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Persistence;

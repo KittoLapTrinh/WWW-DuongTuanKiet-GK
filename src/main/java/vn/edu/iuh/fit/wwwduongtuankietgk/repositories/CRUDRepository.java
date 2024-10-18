@@ -5,6 +5,8 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.TypedQuery;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
+import vn.edu.iuh.fit.wwwduongtuankietgk.repositories.instance.ConnectDB;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -12,13 +14,14 @@ import java.util.Optional;
 public class CRUDRepository <T>{
     protected final EntityManager entityManager;
     protected final EntityTransaction transaction;
+    public CRUDRepository(){
 
-    public CRUDRepository() {
         entityManager = ConnectDB.getInstance().getEntityManager();
         transaction = entityManager.getTransaction();
+
     }
 
-    public List<T> getALl(Class<T> clazz){
+    public List<T> getAll(Class<T> clazz) {
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(clazz);
         query.from(clazz);
@@ -28,11 +31,11 @@ public class CRUDRepository <T>{
 
     public Optional<T> get(Class<T> clazz, long id){
         T obj = entityManager.find(clazz, id);
-        return obj !=null ? Optional.empty() : Optional.of(obj);
+        return obj == null ? Optional.empty() : Optional.of(obj);
     }
 
     public boolean insert(T obj){
-        try{
+        try {
             transaction.begin();
             entityManager.persist(obj);
             transaction.commit();
@@ -44,7 +47,7 @@ public class CRUDRepository <T>{
     }
 
     public boolean update(T obj){
-        try{
+        try {
             transaction.begin();
             entityManager.merge(obj);
             transaction.commit();
@@ -56,7 +59,7 @@ public class CRUDRepository <T>{
     }
 
     public boolean delete(T obj){
-        try{
+        try {
             transaction.begin();
             entityManager.remove(obj);
             transaction.commit();
@@ -66,6 +69,4 @@ public class CRUDRepository <T>{
             return false;
         }
     }
-    
-
 }

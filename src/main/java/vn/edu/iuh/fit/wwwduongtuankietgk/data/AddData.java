@@ -16,9 +16,14 @@ public class AddData {
         Experience ex2 = new Experience(LocalDate.of(2023, 1, 10), "Intern Back End", Roles.STAFF, "DXC", LocalDate.of(2024, 6, 10), candidate1);
         Experience ex3 = new Experience(LocalDate.of(2022, 1, 20), "Intern QA", Roles.STAFF, "Viettel", LocalDate.of(2024, 6, 20), candidate1);
         List<Experience> experiences = List.of(ex1, ex2, ex3);
-        candidate1.setExperiences(experiences);
+        candidate1.setExperences(experiences);
+
+
 
         CandidateRepository repository = new CandidateRepository();
         repository.insert(candidate1);
+        for(Experience experience: experiences){
+            System.out.println(experience);
+        }
     }
 }
