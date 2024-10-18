@@ -102,11 +102,11 @@ public class AddData {
 #### 3. Thiết kế trang index gồm link đến các câu sau 4, 5, 6
    ![image](https://github.com/user-attachments/assets/f013982c-12a5-4bbc-9828-d320efd219b2)
 #### 4. Tạo trang candidates.jsp hiển thị danh sách các candidate theo dạng bảng, một link tên View cuối mỗi dòng candidate để hiển thị thông tin chi tiết của ứng viên đó ở trang khác có candidate_details.jsp
-    ![image](https://github.com/user-attachments/assets/55d9f6b9-e3d0-451f-8a6b-db2514c962ea)
+   ![image](https://github.com/user-attachments/assets/55d9f6b9-e3d0-451f-8a6b-db2514c962ea)
    ![image](https://github.com/user-attachments/assets/71b90950-f2eb-42eb-95d2-f2248fc8a213)
-#### 5. report1.jsp 
+#### 5. report1.jsp -> Roles
    ![image](https://github.com/user-attachments/assets/2c3fa5b2-1fbd-41f7-ae4b-eff1c1149bb3)
-#### 6. report2.jsp
+#### 6. report2.jsp -> Email
    ![image](https://github.com/user-attachments/assets/bef25c40-4575-4f68-855f-fa0fd03b4c4a)
 
 
